@@ -8,7 +8,7 @@ import { ListResponsModel } from '../models/listResponseModel';
   providedIn: 'root'
 })
 export class RentalService {
-  apiUrl="";
+  apiUrl="https://localhost:44359/api/rentals/";
 
   constructor(private httpClient:HttpClient) { }
 
