@@ -1,6 +1,6 @@
 <ul class="list-group list-group-flush">
-  <li class="list-group-head">BRANDS</li>
-  <li class="list-group" *ngFor="let brand of brands">{{ brand.brandName }}</li>
+  <li (click)="setCurrentBrand(brand)" class="list-group-item
+  " *ngFor="let brand of brands">{{ brand.brandName }}</li>
 </ul>
 
  
