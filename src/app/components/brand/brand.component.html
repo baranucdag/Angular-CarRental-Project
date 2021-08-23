@@ -1,6 +1,11 @@
-<ul class="list-group list-group-flush">
-  <li (click)="setCurrentBrand(brand)" class="list-group-item
-  " *ngFor="let brand of brands">{{ brand.brandName }}</li>
+<ul class="list-group list-group">
+  <li
+    (click)="setCurrentBrand(brand)"
+    *ngFor="let brand of brands"
+    [class]="getCurrentBrandClass(brand)"
+  >
+    {{ brand.brandName }}
+  </li>
 </ul>
 
- 
+<h5 *ngIf="currentBrand">seçili brand:{{ currentBrand.brandName }}</h5>
