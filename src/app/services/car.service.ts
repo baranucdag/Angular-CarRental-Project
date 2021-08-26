@@ -14,12 +14,17 @@ export class CarService {
   constructor(private httpClient: HttpClient) {}
 
   getCars(): Observable<ListResponsModel<CarDetail>> {
-    let newPath = this.apiUrl + '/cars/getcardetail';
+    let newPath = this.apiUrl + '/Cars/getcardetail';
     return this.httpClient.get<ListResponsModel<CarDetail>>(newPath);
   }
 
   getCarsByBrandId(brandId: number): Observable<ListResponsModel<CarDetail>> {
     let newPath = this.apiUrl + '/Cars/getcardetailbybrandid?brandId=' + brandId;
+    return this.httpClient.get<ListResponsModel<CarDetail>>(newPath);
+  }
+
+  getCarsByColourId(colourId:number):Observable<ListResponsModel<CarDetail>>{
+    let newPath = this.apiUrl + '/Cars/getcardetailbycolourid?colourId='+colourId;
     return this.httpClient.get<ListResponsModel<CarDetail>>(newPath);
   }
 }
