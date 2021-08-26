@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class ColourService {
 
-  apiUrl="https://localhost:44359/api/colours/getall";
+  apiUrl="https://localhost:44359/api/Colours/getall";
   constructor(private httpClient:HttpClient) { }
 
   getColours():Observable<ListResponsModel<Colour>>{

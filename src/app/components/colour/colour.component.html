@@ -1,6 +1,13 @@
-<!-- <ul class="list-group list-group-flush">
-  <li class="list-group-head">COLOURS</li>
-  <li class="list-group-item" *ngFor="let colour of colours">{{ colour.colourName }}</li>
+<ul class="list-group">
+  <li class="list-group-item"></li>
+  <li
+    (click)="setCurrentColour(colour)"
+    class="list-group-item"
+    *ngFor="let colour of colours"
+  >
+    {{ colour.colourName }}
+  </li>
 </ul>
 
-  -->
+<h5 *ngIf="currentColour">seçili brand:{{ currentColour.colourName }}</h5>
+
