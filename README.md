@@ -1,4 +1,10 @@
 # CarRental
+**This project was created for the front-end part of the Final Project, which is about building a web application on the .Net Core platform **
+* * * * * * *
+*  This project was generated with Angular CLI version 12.2.1.
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
